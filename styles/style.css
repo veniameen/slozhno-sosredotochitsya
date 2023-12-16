@@ -19,7 +19,7 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   padding: 10px;
-  min-height: 100vh;
+  height: 100vh;
   inline-size: 100%;
 }
 
@@ -114,7 +114,7 @@
   border: var(--border-width-auto) solid var(--common-color);
 }
 
-.header__theme-menu-button_active:active {
+.header__theme-menu-button_active {
   pointer-events: none;
 }
 
@@ -244,7 +244,6 @@ a {
 }
 
 a:hover {
-  border-bottom: 1px solid var(--general-background-color);
   outline: none;
   text-decoration: underline;
 }
@@ -300,7 +299,7 @@ a:focus-visible {
   align-items: center;
   margin-block-start: 40px;
   padding: 10px;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .footer-title {
