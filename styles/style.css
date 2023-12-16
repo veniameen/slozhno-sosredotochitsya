@@ -9,7 +9,7 @@
   background-color: var(--background-color);
   background-image: var(--cover-image);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -19,7 +19,7 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   padding: 10px;
-  block-size: 100vh;
+  min-height: 100vh;
   inline-size: 100%;
 }
 
@@ -64,7 +64,7 @@
   margin-inline-start: 10px;
   border-radius: 50%;
   background-color: var(--general-background-color, #ff0070);
-  filter: drop-shadow(0px 0px 5px var(---general-background-color, #ff0070));
+  box-shadow: 0 0 4px 2px var(---general-background-color, #ff0070);
   inline-size: 12px;
   block-size: 12px;
 }
@@ -115,7 +115,6 @@
 }
 
 .header__theme-menu-button_active:active {
-  outline: 1px solid var(--common-color);
   pointer-events: none;
 }
 
@@ -301,7 +300,7 @@ a:focus-visible {
   align-items: center;
   margin-block-start: 40px;
   padding: 10px;
-  block-size: 100vh;
+  min-height: 100vh;
 }
 
 .footer-title {
